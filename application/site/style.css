@@ -1,0 +1,6 @@
+.subwindow{
+    float: left;
+}
+body{
+    background-color: hsl(0, 0%, 13%);
+}

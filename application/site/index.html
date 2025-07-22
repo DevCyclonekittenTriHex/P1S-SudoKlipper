@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="dashboard.css">
+    </head>
+    <body>
+        <div id="headingbar"></div>
+        <div id="maincontent">
+            <div id="dashboardcontent">
+                <div class="window" id="movetoolhead">
+                    <div class="subwindow" id="title">
+                        <p>Movement: </p>
+                    </div>
+                    <div class="subwindow" id="movement">
+
+                        <div class="hiddenblock"></div>
+                        <button class="pythoninteractable" id="pY"> Y+</button>
+                        <div class="hiddenblock"></div>
+
+                        <button class="pythoninteractable" id="nX"> X-</button>
+                        <div class="hiddenblock"></div>
+                        <button class="pythoninteractable" id="pX"> X+</button>
+
+                        <div class="hiddenblock"></div>
+                        <button class="pythoninteractable" id="nY"> Y-</button>
+                        <div class="hiddenblock"></div>
+                    </div>
+                    <div class="subwindow" id="homing">
+                        <p>Home: </p>
+                        <button class="pythoninteractable" id="homeAll">All</button>
+                        <button class="pythoninteractable" id="homeX">X</button>
+                        <button class="pythoninteractable" id="homeY">Y</button>
+                        <button class="pythoninteractable" id="homeZ">Z</button>
+                        <p>Movement Distance: 5mm</p>
+                        <button class="pythoninteractable stepbutton" id="step0.1">0.1</button>
+                        <button class="pythoninteractable stepbutton" id="step1">1</button>
+                        <button class="pythoninteractable stepbutton" id="step5">5</button>
+                        <button class="pythoninteractable stepbutton" id="step10">10</button>
+                        <button class="pythoninteractable stepbutton" id="step50">50</button>
+                    </div>
+                    <div class="subwindow" id="movez"> 
+                        <p> Z offset: 0.05</p>
+                        <button class="pythoninteractable" id="nZ"> Z-</button>
+                        <button class="pythoninteractable" id="pZ"> Z+</button>
+                        <div id="grid">
+                            <button class="pythoninteractable stepbutton" id="pZStep0.01">0.005</button>
+                            <button class="pythoninteractable stepbutton" id="pZStep0.01">0.01</button>
+                            <button class="pythoninteractable stepbutton" id="pZStep0.05">0.05</button>
+                            <button class="pythoninteractable stepbutton" id="pZStep0.1">0.1</button>
+                            <button class="pythoninteractable stepbutton" id="pZstep1">1</button>
+                            <button class="pythoninteractable stepbutton" id="nZStep0.01">-0.005</button>
+                            <button class="pythoninteractable stepbutton" id="nZStep0.01">-0.01</button>
+                            <button class="pythoninteractable stepbutton" id="nZStep0.05">-0.05</button>
+                            <button class="pythoninteractable stepbutton" id="nZStep0.1">-0.1</button>
+                            <button class="pythoninteractable stepbutton" id="nZstep1">-1</button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+    </body>
+</html>
