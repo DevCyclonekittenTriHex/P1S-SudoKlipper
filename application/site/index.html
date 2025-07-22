@@ -3,6 +3,8 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="dashboard.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <div id="headingbar"></div>
@@ -60,5 +62,19 @@
 
                 </div>
             </div>
+            <script> 
+                buttonNames = ["homeX","homeY"];
+                for (let i = 0; i < buttonNames.length; i++) {
+                    console.log(i);
+                    document.getElementById(buttonNames[i]).onclick = function() {
+                        const inputString = buttonNames[i];
+                        fetch(`/RunFunction?input_string=${encodeURIComponent(inputString)}`, { method: 'POST' })
+                            .then(response => response.json())
+                            .then(data => {
+                                document.getElementById('result').innerText = data.result;
+                            });
+                    };
+                }
+            </script>
     </body>
 </html>
